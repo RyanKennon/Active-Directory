@@ -53,7 +53,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ### 1) Create Virtual Machines
 
-1. Open **Microsoft Azure** then search **Resource Groups** and select **create** give the **Resource Group** the following settings then create the **Resource Group**
+1. Open **Microsoft Azure** then search **Resource Groups** and select **create** then give the **Resource Group** the following settings then create the **Resource Group**
   - **Name:** RG-01
   - **Reigon:** South Central US
 
@@ -61,7 +61,7 @@ This project demonstrates the complete deployment and administration of an enter
   <img width="426" height="373" alt="Untitled Diagram-Page-1 drawio" src="https://github.com/user-attachments/assets/a69171bc-fb18-4e60-a6c6-fd4aa9844675" />
 </p>
 
-2. Search **Virtual Network** and select **create** give the **Virtual Network** the following settings then create the **Virtual Network**
+2. Search **Virtual Network** and select **create** then give the **Virtual Network** the following settings then create the **Virtual Network**
   - **Resource Group:** RG-01
   - **Name:** VNet-01
   - **Reigon:** South Central US
@@ -70,7 +70,7 @@ This project demonstrates the complete deployment and administration of an enter
   <img width="550" height="612" alt="Untitled Diagram-Page-2 drawio" src="https://github.com/user-attachments/assets/e9d0699e-cf47-4e10-be8f-44c13fcf49b2" />
 </p>
 
-3. Seach **Virtual Machines** then **create** give the **Virtual Machine** the following settings then create the **Virtual Machine**
+3. Seach **Virtual Machines** then **create** then give the **Virtual Machine** the following settings then create the **Virtual Machine**
   - **Basics**
     - **Resource Group:** RG-01
     - **Name:** DC-01
@@ -86,7 +86,7 @@ This project demonstrates the complete deployment and administration of an enter
   <img width="410" height="226" alt="Untitled Diagram-Page-4 drawio" src="https://github.com/user-attachments/assets/8f098656-6478-4fd0-b4ba-4dc3d1cbb35c" />
 </p>
 
-  4. Seach **Virtual Machines** then **create** give the **Virtual Machine** the following settings then create the **Virtual Machine**
+  4. Seach **Virtual Machines** then **create** then give the **Virtual Machine** the following settings then create the **Virtual Machine**
   - **Basics**
     - **Resource Group:** RG-01
     - **Name:** Client-1
