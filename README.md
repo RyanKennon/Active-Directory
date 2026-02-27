@@ -26,25 +26,26 @@ This project demonstrates the complete deployment and administration of an enter
 - [5) Log into the Virtual Machines](#5-log-into-the-virtual-machines)
 - [6) Install Active Directory Domain Services](#6-install-active-directory-domain-services)
 - [7) Promote Server to Domain Controller](#7-promote-server-to-domain-controller)
-- [8) Verify Domain Functionality](#8-verify-domain-functionality)
-- [9) Enable Remote Dial-In](#9-enable-remote-dial-in-for-non-administrative-users)
-- [10) Give Remote Desktop Permissions](#10-give-remote-desktop-permissions-to-domain-users)
-- [11) Verify VM Connectivity](#11-verify-the-virtual-machines-are-connected)
-- [12) Create Organizational Units](#12-create-organizational-units)
-- [13) Create a User](#13-create-a-user)
-- [14) Create Security Groups](#14-create-security-groups)
-- [15) Assign Folder Permissions](#15-assign-folder-permissions)
-- [16) Attempt Folder Access](#16-attempt-to-access-the-folders)
-- [17) Upgrade User to Domain Admin](#17-upgrade-user-to-domain-admin)
-- [18) Verify Admin Access](#18-verify-admin-access)
-- [19) Create Password Policy](#19-create-an-account-password-policy)
-- [20) Lockout User Account](#20-lockout-the-users-account)
-- [21) Unlock User Account](#21-unlock-the-users-account)
-- [22) Reset User Password](#22-reset-the-users-password)
-- [23) Verify Functionality](#23-verify-functionality)
-- [24) Set Account Logon Hours](#24-set-account-logon-hours)
-- [25) Deactivate Account](#25-deactivating-user-accounts)
-- [26) Deprovision Account](#26-deprovisioning-user-accounts)
+- [8) Login to the Client Virtual Machine as the Domain Administrator](#8-login-to-the-client-virtual-machine-as-the-domain-administrator)
+- [9) Verify Domain Functionality](#9-verify-domain-functionality)
+- [10) Enable Remote Dial-In](#10-enable-remote-dial-in-for-non-administrative-users)
+- [11) Give Remote Desktop Permissions](#11-give-remote-desktop-permissions-to-domain-users)
+- [12) Verify VM Connectivity](#12-verify-the-virtual-machines-are-connected)
+- [13) Create Organizational Units](#13-create-organizational-units)
+- [14) Create a User](#14-create-a-user)
+- [15) Create Security Groups](#15-create-security-groups)
+- [16) Assign Folder Permissions](#16-assign-folder-permissions)
+- [17) Attempt Folder Access](#17-attempt-to-access-the-folders)
+- [18) Upgrade User to Domain Admin](#18-upgrade-user-to-domain-admin)
+- [19) Verify Admin Access](#19-verify-admin-access)
+- [20) Create Password Policy](#20-create-an-account-password-policy)
+- [21) Lockout User Account](#21-lockout-the-users-account)
+- [22) Unlock User Account](#22-unlock-the-users-account)
+- [23) Reset User Password](#23-reset-the-users-password)
+- [24) Verify Functionality](#24-verify-functionality)
+- [25) Set Account Logon Hours](#25-set-account-logon-hours)
+- [26) Deactivate Account](#26-deactivating-user-accounts)
+- [27) Deprovision Account](#27-deprovisioning-user-accounts)
 
 ---
 
@@ -122,10 +123,10 @@ This project demonstrates the complete deployment and administration of an enter
 
 ### 3) Get the Domain Controller's Private IP Address
 
-1. Select the **Domain Controller** then scroll down to the **Networking** section and find the **Private IP Address**
+1. Select the **Domain Controller** then open the **Network Settings** tab and find the **Private IP Address**
 
 <p align="center">
-  <img width="1570" height="417" alt="Untitled Diagram-Page-8 drawio (2)" src="https://github.com/user-attachments/assets/929dd830-44ca-42f8-bdeb-c23faa309984" />
+  <img width="1625" height="531" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/54fcc4ca-6b89-4fc8-9dfa-ab3795b47ce0" />
 </p>
 
 ---
@@ -189,20 +190,34 @@ This project demonstrates the complete deployment and administration of an enter
   <img width="1921" height="784" alt="Drawing7 drawio" src="https://github.com/user-attachments/assets/1dde3344-4dd4-4051-bf4a-c71120f3a326" />
 </p>
 
-2. Choose **Add a new forest** and set the root domain name
+2. Choose **Add a new forest** and set the root domain name to **domain.name**
 
 <p align="center">
   <img width="759" height="556" alt="Drawing8 drawio" src="https://github.com/user-attachments/assets/1fff2c8d-80e7-4574-98f3-9bea980308ef" />
 </p>
 
-3. Set the Directory Services Restore Mode (DSRM) password and complete the install and reboot the VMM
+3. Set the Directory Services Restore Mode (DSRM) password to **Cyberlab123!** and complete the install and reboot the VMM
 
 ---
 
-### 8) Verify Domain Functionality
+### 8) Login to the Client Virtual Machine as the Domain Administrator
 
-1. Log into the **Client Virtual Machine** as the **Domain Administrator** open **Windows PowerShell**
-2. Attempt to ping the DC's private IP address
+1. Open the **Remote Desktop Protocol** and enter the **client virtual machine's public IP address**
+2. When asked about the username name and password enter
+   - **Username:** domain.name\userryan
+   - **Password:** Cyberlab123!
+  
+<p align="center">
+  <img width="454" height="468" alt="Capture2" src="https://github.com/user-attachments/assets/b6ca06fd-0af3-46c0-b0ef-b2fb9e2f9823" />
+</p>
+
+---
+
+### 9) Verify Domain Functionality
+
+1. Log into the **Client Virtual Machine** as the **Domain Administrator** open **Windows PowerShell as an Administrator**
+2. Attempt to ping the DC's private IP address using the command **`ping 10.0.0.4`**
+  - Your private IP address is most likely different. If you don't remember return to [3) Get the Domain Controllers Private IP](#3-get-the-domain-controllers-private-ip-address)
 3. Ensure the ping succeeded
 
 <p align="center">
@@ -218,7 +233,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 9) Enable Remote Dial-In for Non-Administrative Users
+### 10) Enable Remote Dial-In for Non-Administrative Users
 
 1. In the **Client Virtual Machine** right click the **Start Button** and select **System**
 2. Navigate to the **About** page and select **Rename this PC (advanced) then click **Change**
@@ -230,7 +245,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 10) Give Remote Desktop Permissions to Domain Users
+### 11) Give Remote Desktop Permissions to Domain Users
 
 1. On the **Client Virtual Machine** right click the **Start Button** and select **Computer Management**
 2. Go to **Local Users and Groups** and open the **Groups** folder
@@ -246,7 +261,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 11) Verify the Virtual Machines are Connected
+### 12) Verify the Virtual Machines are Connected
 
 1. Open the **Server Manager** on the **Domain Controller**
 2. Select **Tools** then **Active Directory Users and Computers**
@@ -264,7 +279,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 12) Create Organizational Units
+### 13) Create Organizational Units
 
 1. Open the **Server Manager** on the **Domain Controller**
 2. Select **Tools** then **Active Directory Users and Computers**
@@ -289,17 +304,17 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 13) Create a User
+### 14) Create a User
 
 1. Right click the **Employees** folder
 2. Open the **New** submenu
-3. Then select **User**
+3. Then seelect **User**
 
 <p align="center">
    <img width="755" height="549" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/62185a90-7adb-4ac9-964c-d1c3bcc2e80b" />
 </p>
 
-4. Enter the User's information
+4. Name the user **Ryan Kennon**
 
 <p align="center">
    <img width="753" height="530" alt="Untitled Diagram-Page-6 drawio" src="https://github.com/user-attachments/assets/80ff677e-49a9-486f-b59a-6d47cf2066cb" />
@@ -307,7 +322,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 14) Create Security Groups
+### 15) Create Security Groups
 
 1. Open the **Groups** folder
 2. Open the **New** submenu
@@ -334,7 +349,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 15) Assign Folder Permissions
+### 16) Assign Folder Permissions
 
 1. On the **`C: \`** create 3 folders named: HR-ReadWrite, HR-ReadOnly, and AdminsOnly
 
@@ -373,7 +388,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 16) Attempt to Access the Folders
+### 17) Attempt to Access the Folders
 
 1. **Log into the client VM** using the **credentials of the user** created earlier
 2. Open the **File Explorer**
@@ -403,10 +418,10 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 17) Upgrade User to Domain Admin
+### 18) Upgrade User to Domain Admin
 
 1. Go back to **Active Directory Users & Computers** on the **Domain Controller**
-2. Open the **Employees** folder then right click the user and select **Properties**
+2. Open the **Employees** folder then right click the user **Ryan Kennon** and select **Properties**
 
 <p align="center">
    <img width="751" height="527" alt="Untitled Diagram-Page-20 drawio" src="https://github.com/user-attachments/assets/a7fb0f02-e418-43b2-96e2-0f246cdf8c54" />
@@ -423,10 +438,10 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 18) Verify Admin Access
+### 19) Verify Admin Access
 
 1. Log back in to the **client VM** using the **user's credentials**
-2. Search **`\\<DC name>`** in the **Quick Access** bar again
+2. Search **`\\DC-01`** in the **Quick Access** bar again
 3. Attempt to open the **AdminsOnly** folder and attempt to create a new file inside
 
 <p align="center">
@@ -435,7 +450,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 19) Create an Account Password Policy
+### 20) Create an Account Password Policy
 
 1. On the **Domain Controller** open the **Server Manager**
 2. Select **Tools** then **Group Policy Management**
@@ -492,7 +507,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 20) Lockout the User's Account
+### 21) Lockout the User's Account
 
 1. Attempt to log into the **client Virtual Machine** using an **incorrect password** four times
 
@@ -502,10 +517,10 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 21) Unlock the User's Account
+### 22) Unlock the User's Account
 
 1. Open **Active Directory Users and Computers**
-2. Double click the **user**
+2. Double click the user **Ryan Kennon**
 3. Click **Account**
 4. Check the box labeled **Unlock Account**
 5. Apply the Changes
@@ -516,9 +531,9 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 22) Reset the User's Password
+### 23) Reset the User's Password
 
-1. Right click the **user**
+1. Right click the user **Ryan Kennon**
 2. Select **Reset Password**
 
 <p align="center">
@@ -534,7 +549,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 23) Verify Functionality
+### 24) Verify Functionality
 
 1. Attempt to log into the **client Virtual Machine** using the updated **user credentials**
 
@@ -544,10 +559,10 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 24) Set Account Logon Hours
+### 25) Set Account Logon Hours
 
 1. On the **Domain Controller** open **Active Directory Users and Computers**
-2. Right-click the **user** and select **Properties**
+2. Right-click the user **Ryan Kennon** and select **Properties**
 
 <p align="center">
   <img width="752" height="528" alt="Untitled Diagram-Page-1 drawio" src="https://github.com/user-attachments/assets/db0724d4-87f1-47f1-8ca4-0720ae61eb45" />
@@ -575,9 +590,9 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 25) Deactivating User Accounts
+### 26) Deactivating User Accounts
 
-1. In **Active Directory Users and Computers** right-click the user
+1. In **Active Directory Users and Computers** right-click the user **Ryan Kennon**
 2. Select **Disable Account**
 
 <p align="center">
@@ -599,9 +614,9 @@ This project demonstrates the complete deployment and administration of an enter
 
 ---
 
-### 26) Deprovisioning User Accounts
+### 27) Deprovisioning User Accounts
 
-1. In **Active Directory Users and Computers** right-click the user
+1. In **Active Directory Users and Computers** right-click the user **Ryan Kennon**
 2. Select **Delete**
 3. Confirm you want to delete the user
 
