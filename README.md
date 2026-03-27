@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7b65e021-0e08-42ae-8da2-f57cd11aceb7" width="300" height="168" alt="image" />
+  <img src="active_directory_lab.jpeg" alt="Active Directory Lab" width="600"/>
 </p>
 
 # Active Directory Enterprise Administration End-to-End Lab (Azure Virtual Environment)
