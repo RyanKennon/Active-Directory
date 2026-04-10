@@ -13,7 +13,7 @@ This project demonstrates the complete deployment and administration of an enter
 - Microsoft Azure
 - Windows Server 2022
 - Windows 10 Pro Client
-- Active Directory DOmain Services (AD DS)
+- Active Directory Domain Services (AD DS)
 - Networking & Protocols
 - Tools & Utilities
 
