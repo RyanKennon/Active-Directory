@@ -276,7 +276,7 @@ This project demonstrates the complete deployment and administration of an enter
 4. The client VM should be inside
 
 <p align="center">
-  <img width="754" height="529" alt="Previous3 drawio" src="https://github.com/user-attachments/assets/8ce7e5f3-34c7-4138-98ce-e09fe37048f9" />
+  <img src="Images/Image%2024.PNG" img width="754" height="529" alt="image">
 </p>
 
 ---
@@ -290,13 +290,13 @@ This project demonstrates the complete deployment and administration of an enter
 5. Then select **Organizational Unit**
 
 <p align="center">
-  <img width="755" height="531" alt="Untitled Diagram-Page-3 drawio" src="https://github.com/user-attachments/assets/8635d7b6-7680-4189-af90-ba22229373c2" />
+  <img src="Images/Image%2025.PNG" img width="755" height="531" alt="image">
 </p>
 
 6. Create 3 Organizational Units called: Employees, Admins, and Groups
 
 <p align="center">
-   <img width="754" height="530" alt="Untitled Diagram-Page-4 drawio" src="https://github.com/user-attachments/assets/df1a2b65-9fc2-439f-be2b-fbd7fc110984" />
+   <img src="Images/Image%2026.PNG" img width="754" height="530" alt="image">
 </p>
 
 ---
@@ -308,13 +308,13 @@ This project demonstrates the complete deployment and administration of an enter
 3. Then select **User**
 
 <p align="center">
-   <img width="755" height="549" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/62185a90-7adb-4ac9-964c-d1c3bcc2e80b" />
+   <img src="Images/Image%2027.PNG" img width="755" height="549" alt="image">
 </p>
 
 4. Name the user **Ryan Kennon**
 
 <p align="center">
-   <img width="753" height="530" alt="Untitled Diagram-Page-6 drawio" src="https://github.com/user-attachments/assets/80ff677e-49a9-486f-b59a-6d47cf2066cb" />
+   <img src="Images/Image%2028.PNG" img width="753" height="530" alt="image">
 </p>
 
 ---
@@ -326,13 +326,13 @@ This project demonstrates the complete deployment and administration of an enter
 3. Then select **Group**
 
 <p align="center">
-   <img width="753" height="583" alt="Untitled Diagram-Page-21 drawio" src="https://github.com/user-attachments/assets/ecfd98c1-aad7-4f23-8f6a-71b54da52b74" />
+   <img src="Images/Image%2029.PNG" img width="753" height="583" alt="image">
 </p>
 
 4. Name the Group: Human Resources
 
 <p align="center">
-   <img width="754" height="530" alt="Untitled Diagram-Page-7 drawio" src="https://github.com/user-attachments/assets/7cdc7f08-cf95-444c-a7ac-472701c48984" />
+   <img src="Images/Image%2030.PNG" img width="754" height="530" alt="image">
 </p>
 
 5. Double click the **Human Resources** security group
@@ -341,24 +341,19 @@ This project demonstrates the complete deployment and administration of an enter
 8. Apply the changes
 
 <p align="center">
-   <img width="1056" height="562" alt="Untitled Diagram-Page-8 drawio" src="https://github.com/user-attachments/assets/e40e3052-d247-4519-846b-0f13e256127f" />
+   <img src="Images/Image%2031.PNG" img width="1056" height="562" alt="image">
 </p>
 
 ---
 
 ### 16) Assign Folder Permissions
 
-1. On the **`C: \`** create 3 folders named: HR-ReadWrite, HR-ReadOnly, and AdminsOnly
-
-<p align="center">
-   <img width="1125" height="633" alt="Untitled Diagram-Page-9 drawio" src="https://github.com/user-attachments/assets/bc89fd33-3fc2-48fc-b23d-d1200368f695" />
-</p>
-
+1. On the **Domain Controller** navigate to the **`C: \`**
 2. Open the **Properties** for the folder called **HR-ReadWrite**
 3. Then select **Sharing** then **Share**
 
 <p align="center">
-   <img width="361" height="479" alt="Untitled Diagram-Page-10 drawio" src="https://github.com/user-attachments/assets/4997118c-879d-4ced-b7b3-a6c14a83a9fa" />
+   <img src="Images/Image%2032.PNG" img width="361" height="479" alt="image">
 </p>
 
 4. Then enter **Human Resources** in the box then select **Add**
@@ -366,13 +361,13 @@ This project demonstrates the complete deployment and administration of an enter
 6. Confirm the changes
 
 <p align="center">
-   <img width="613" height="453" alt="Untitled Diagram-Page-11 drawio" src="https://github.com/user-attachments/assets/e5840ca3-0b27-43e3-a59f-b463ae41941a" />
+   <img src="Images/Image%2033.PNG" img width="613" height="453" alt="image">
 </p>
 
 7. Do the same for the **HR-ReadOnly** folder except give the Human Resources group **Read** priveleges only.
 
 <p align="center">
-   <img width="613" height="454" alt="Untitled Diagram-Page-12 drawio" src="https://github.com/user-attachments/assets/ce474a2d-0785-4e4e-9427-79ebdd7916bf" />
+   <img src="Images/Image%2034.PNG" img width="613" height="454" alt="image">
 </p>
 
 8. For the **AdminsOnly** folder, enter **Domain Admins** in the box before hitting **Add**
@@ -380,7 +375,7 @@ This project demonstrates the complete deployment and administration of an enter
 10. Apply the changes
 
 <p align="center">
-   <img width="613" height="453" alt="Untitled Diagram-Page-13 drawio" src="https://github.com/user-attachments/assets/5bb94385-5358-423c-b51f-3639bbb3d45e" />
+   <img src="Images/Image%2035.PNG" img width="613" height="453" alt="image">
 </p>
 
 ---
@@ -392,25 +387,25 @@ This project demonstrates the complete deployment and administration of an enter
 3. On the **Quick Access** bar search **`\\<DC name>`**
 
 <p align="center">
-   <img width="1124" height="633" alt="Untitled Diagram-Page-14 drawio" src="https://github.com/user-attachments/assets/81babfc6-144c-4ffa-b10c-225d43e2b849" />
+   <img src="Images/Image%2036.PNG" img width="1124" height="633" alt="image">
 </p>
 
 4. Attempt to access the **HR-ReadWrite** folder and create a new file inside
 
 <p align="center">
-   <img width="1125" height="634" alt="Untitled Diagram-Page-15 drawio" src="https://github.com/user-attachments/assets/0ca74ee8-c7da-4869-a518-5c0010cd411d" />
+   <img src="Images/Image%2037.PNG" img width="1125" height="634" alt="image">
 </p>
 
 5. Attempt to access the **HR-ReadOnly** folder and attempt to create a new file inside
 
 <p align="center">
-   <img width="1123" height="630" alt="Untitled Diagram-Page-16 drawio" src="https://github.com/user-attachments/assets/eb2b72df-bfb2-41a2-8823-0012887f433a" />
+   <img src="Images/Image%2038.PNG" img width="1123" height="630" alt="image">
 </p>
 
 6. Attempt to access the **AdminsOnly** folder
 
 <p align="center">
-   <img width="1122" height="630" alt="Untitled Diagram-Page-17 drawio" src="https://github.com/user-attachments/assets/a09c2962-6d55-4b04-b54d-1fb3bd0ccdf4" />
+   <img src="Images/Image%2039.PNG" img width="1122" height="630" alt="image">
 </p>
 
 ---
@@ -425,7 +420,7 @@ This project demonstrates the complete deployment and administration of an enter
 6. Confirm the changes
 
 <p align="center">
-   <img width="653" height="536" alt="Untitled Diagram-Page-18 drawio" src="https://github.com/user-attachments/assets/ff9dd259-2533-40d6-bbcb-cbfba16e531b" />
+   <img src="Images/Image%2040.PNG" img width="653" height="536" alt="image">
 </p>
 
 ---
@@ -437,7 +432,7 @@ This project demonstrates the complete deployment and administration of an enter
 3. Attempt to open the **AdminsOnly** folder and attempt to create a new file inside
 
 <p align="center">
-   <img width="1122" height="631" alt="Untitled Diagram-Page-19 drawio" src="https://github.com/user-attachments/assets/ad515c8e-0afe-4bd9-a4f6-4e9a72968a15" />
+   <img src="Images/Image%2041.PNG" img width="1122" height="631" alt="image">
 </p>
 
 ---
