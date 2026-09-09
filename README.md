@@ -443,34 +443,34 @@ This project demonstrates the complete deployment and administration of an enter
 2. Select **Tools** then **Group Policy Management**
 
 <p align="center">
-  <img width="1310" height="761" alt="Untitled Diagram-Page-1 drawio" src="https://github.com/user-attachments/assets/6ebebf36-19ee-4cc6-9acc-ec17be43ade2" />
+  <img src="Images/Image%2042.png" img width="1310" height="761" alt="image">
 </p>
 
 3. Navigate through the **Forest** to the **Default Domain Policy**
 4. Right click **Default Domain Policy** then choose **Edit**
 
 <p align="center">
-  <img width="752" height="527" alt="Untitled Diagram-Page-2 drawio" src="https://github.com/user-attachments/assets/3e2e4023-c338-4864-af0f-fff899244cdf" />
+  <img src="Images/Image%2043.PNG" img width="752" height="527" alt="image">
 </p>
 
 5. In the **Group Policy Management Editor** navigate through the **Policies** folder to the **Password Policy**
 
 <p align="center">
-  <img width="785" height="562" alt="Untitled Diagram-Page-3 drawio" src="https://github.com/user-attachments/assets/e6fb7b79-9cc3-4ea4-8c29-2a662c646909" />
+  <img src="Images/Image%2044.PNG" img width="785" height="562" alt="image">
 </p>
 
 6. Right-Click **Maximum Password Age** then select **Properties**
 7. Change **Password Will Expire In** to **30 days** then **Apply**
 
 <p align="center">
-  <img width="715" height="589" alt="Untitled Diagram-Page-4 drawio" src="https://github.com/user-attachments/assets/b7de2388-821e-46f2-9d0c-002d54b39ac1" />
+  <img src="Images/Image%2045.PNG" img width="715" height="589" alt="image">
 </p>
 
 8. Right-Click **Minimum Password Length** then select **Properties**
 9. Change **Password Must Be At Least** to **12 characters** then **Apply**
 
 <p align="center">
-  <img width="1019" height="668" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/06b4eb15-f0e0-4b93-9bf4-c4b4e3740da5" />
+  <img src="Images/Image%2046.PNG" img width="1019" height="668" alt="image">
 </p>
 
 10. Open the **Account Lockout Policy**
@@ -478,14 +478,14 @@ This project demonstrates the complete deployment and administration of an enter
 12. Change the **Account Will Not Lock Out** to **3 Invalid Login Attempts** then **Apply**
 
 <p align="center">
-  <img width="1022" height="669" alt="Untitled Diagram-Page-6 drawio" src="https://github.com/user-attachments/assets/c934b2ba-62f9-4d48-aaa0-c108e08c3784" />
+  <img src="Images/Image%2047.PNG" img width="1022" height="669" alt="image">
 </p>
 
 13. Right-Click **Account Lockout Duration** then select **Properties**
 14. Change the **Account Lockout Duration** to **360 minutes**
 
 <p align="center">
-  <img width="713" height="584" alt="Untitled Diagram-Page-7 drawio" src="https://github.com/user-attachments/assets/3a9d850d-33b0-43e9-91fd-48c919d9d68f" />
+  <img src="Images/Image%2048.PNG" img width="713" height="584" alt="image">
 </p>
 
 15. Go back to the **Group Policy Management** page
@@ -493,7 +493,7 @@ This project demonstrates the complete deployment and administration of an enter
 17. Click **Enforced**
 
 <p align="center">
-  <img width="751" height="527" alt="Untitled Diagram-Page-8 drawio" src="https://github.com/user-attachments/assets/af525589-f358-4b69-9ae8-9f9a0a696945" />
+  <img src="Images/Image%2049.PNG" img width="751" height="527" alt="image">
 </p>
 
 ---
@@ -503,7 +503,7 @@ This project demonstrates the complete deployment and administration of an enter
 1. Attempt to log into the **Client Virtual Machine** using an **incorrect password** four times
 
 <p align="center">
-  <img width="567" height="369" alt="Untitled Diagram-Page-9 drawio" src="https://github.com/user-attachments/assets/888ab766-b79a-4c76-b220-5e1fe7899df0" />
+  <img src="Images/Image%2050.PNG" img width="567" height="369" alt="image">
 </p>
 
 ---
@@ -517,7 +517,7 @@ This project demonstrates the complete deployment and administration of an enter
 5. Apply the Changes
 
 <p align="center">
-  <img width="749" height="667" alt="Untitled Diagram-Page-10 drawio" src="https://github.com/user-attachments/assets/35276247-79bc-427e-a979-62ebee8d1975" />
+  <img src="Images/Image%2051.PNG" img width="749" height="667" alt="image">
 </p>
 
 ---
@@ -528,14 +528,14 @@ This project demonstrates the complete deployment and administration of an enter
 2. Select **Reset Password**
 
 <p align="center">
-  <img width="751" height="525" alt="Untitled Diagram-Page-11 drawio" src="https://github.com/user-attachments/assets/71c01277-8ad5-4fb3-8328-124e95e3b0f1" />
+  <img src="Images/Image%2052.PNG" img width="751" height="525" alt="image">
 </p>
 
 3. Enter the new password
 4. Apply the Changes
 
 <p align="center">
-  <img width="377" height="254" alt="Untitled Diagram-Page-12 drawio" src="https://github.com/user-attachments/assets/8065b96f-2809-4d0c-b42a-bda8e3843270" />
+  <img src="Images/Image%2053.PNG" img width="377" height="254" alt="image">
 </p>
 
 ---
@@ -545,7 +545,7 @@ This project demonstrates the complete deployment and administration of an enter
 1. Attempt to log into the **Client Virtual Machine** using the updated **user credentials**
 
 <p align="center">
-  <img width="786" height="444" alt="Untitled Diagram-Page-13 drawio" src="https://github.com/user-attachments/assets/bee7a8f1-ecee-4678-b7f7-63e19546e757" />
+  <img src="Images/Image%2054.PNG" img width="786" height="444" alt="image">
 </p>
 
 ---
@@ -559,19 +559,19 @@ This project demonstrates the complete deployment and administration of an enter
 5. Apply the changes
 
 <p align="center">
-  <img width="628" height="556" alt="Untitled Diagram-Page-2 drawio" src="https://github.com/user-attachments/assets/5be9bab1-b54a-4207-bb65-f32309912c64" />
+  <img src="Images/Image%2055.PNG" img width="628" height="556" alt="image">
 </p>
 
 6. Attempt to log into the **Client Virtual Machine** using the **User's Credentials** to observe the change
 
 <p align="center">
-  <img width="556" height="356" alt="Untitled Diagram-Page-3 drawio" src="https://github.com/user-attachments/assets/956ffec0-bf21-402a-905c-6485c23f2263" />
+  <img src="Images/Image%2056.PNG" img width="556" height="356" alt="image">
 </p>
 
 7. On the **Logon Hours** page highlight all the hours and select **Logon Permitted** and apply the changes to reenable sign on
 
 <p align="center">
-  <img width="504" height="319" alt="Untitled Diagram-Page-4 drawio" src="https://github.com/user-attachments/assets/8f4db8fa-7001-423e-a5a5-f1a1a6b393c5" />
+  <img src="Images/Image%2057.PNG" img width="504" height="319" alt="image">
 </p>
 
 ---
