@@ -238,7 +238,7 @@ This project demonstrates the complete deployment and administration of an enter
 ### 10) Enable Remote Dial-In for Non-Administrative Users
 
 1. In the **Client Virtual Machine** right click the **Start Button** and select **System**
-2. Navigate to the **About** page and select **Rename this PC (advanced) then click **Change**
+2. Navigate to the **About** page and select **Rename this PC (advanced)** then click **Change**
 3. Check the **Member of Domain** box and enter the name of the **domain** and apply the changes
 
 <p align="center">
@@ -251,7 +251,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 1. On the **Client Virtual Machine** right click the **Start Button** and select **Computer Management**
 2. Go to **Local Users and Groups** and open the **Groups** folder
-3. Select **Remote Desktop Users** and click **Add**
+3. Right-Click **Remote Desktop Users** then **Properties** and click **Add**
 4. Type **Domain Users** in the box and click **Check Names**
 5. Apply the changes
 
@@ -285,12 +285,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 1. Open the **Server Manager** on the **Domain Controller**
 2. Select **Tools** then **Active Directory Users and Computers**
-
-<p align="center">
-  <img width="1920" height="759" alt="Untitled Diagram-Page-2 drawio" src="https://github.com/user-attachments/assets/e288e202-d97b-42fb-bb4e-5658a4e9fe63" />
-</p>
-
-3. Right click the **domain**
+3. Right click the **Domain**
 4. Open the **New** submenu
 5. Then select **Organizational Unit**
 
@@ -310,7 +305,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 1. Right click the **Employees** folder
 2. Open the **New** submenu
-3. Then seelect **User**
+3. Then select **User**
 
 <p align="center">
    <img width="755" height="549" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/62185a90-7adb-4ac9-964c-d1c3bcc2e80b" />
@@ -412,7 +407,7 @@ This project demonstrates the complete deployment and administration of an enter
    <img width="1123" height="630" alt="Untitled Diagram-Page-16 drawio" src="https://github.com/user-attachments/assets/eb2b72df-bfb2-41a2-8823-0012887f433a" />
 </p>
 
-6. Attempt to access the **NoAccess** folder
+6. Attempt to access the **AdminsOnly** folder
 
 <p align="center">
    <img width="1122" height="630" alt="Untitled Diagram-Page-17 drawio" src="https://github.com/user-attachments/assets/a09c2962-6d55-4b04-b54d-1fb3bd0ccdf4" />
@@ -424,11 +419,6 @@ This project demonstrates the complete deployment and administration of an enter
 
 1. Go back to **Active Directory Users & Computers** on the **Domain Controller**
 2. Open the **Employees** folder then right click the user **Ryan Kennon** and select **Properties**
-
-<p align="center">
-   <img width="751" height="527" alt="Untitled Diagram-Page-20 drawio" src="https://github.com/user-attachments/assets/a7fb0f02-e418-43b2-96e2-0f246cdf8c54" />
-</p>
-
 3. Select **Member Of** then **Add**
 4. Type **Domain Admin**
 5. Then **Check Names**
@@ -474,34 +464,38 @@ This project demonstrates the complete deployment and administration of an enter
   <img width="785" height="562" alt="Untitled Diagram-Page-3 drawio" src="https://github.com/user-attachments/assets/e6fb7b79-9cc3-4ea4-8c29-2a662c646909" />
 </p>
 
-6. Change the **Maximum Password Age** to **30 days**
+6. Right-Click **Maximum Password Age** then select **Properties**
+7. Change **Password Will Expire In** to **30 days** then **Apply**
 
 <p align="center">
   <img width="715" height="589" alt="Untitled Diagram-Page-4 drawio" src="https://github.com/user-attachments/assets/b7de2388-821e-46f2-9d0c-002d54b39ac1" />
 </p>
 
-7. Change the **Minimum Password Length** to **12 characters**
+8. Right-Click **Minimum Password Length** then select **Properties**
+9. Change **Password Must Be At Least** to **12 characters** then **Apply**
 
 <p align="center">
   <img width="1019" height="668" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/06b4eb15-f0e0-4b93-9bf4-c4b4e3740da5" />
 </p>
 
-8. Open the **Account Lockout Policy**
-9. Change the **Account Lockout Threshold** to **3 invalid login attempts**
+10. Open the **Account Lockout Policy**
+11. Right-Click **Account Lockout Threshold** then select **Properties**
+12. Change the **Account Will Not Lock Out** to **3 Invalid Login Attempts** then **Apply**
 
 <p align="center">
   <img width="1022" height="669" alt="Untitled Diagram-Page-6 drawio" src="https://github.com/user-attachments/assets/c934b2ba-62f9-4d48-aaa0-c108e08c3784" />
 </p>
 
-10. Change the **Account Lockout Duration** to **360 minutes**
+13. Right-Click **Account Lockout Duration** then select **Properties**
+14. Change the **Account Lockout Duration** to **360 minutes**
 
 <p align="center">
   <img width="713" height="584" alt="Untitled Diagram-Page-7 drawio" src="https://github.com/user-attachments/assets/3a9d850d-33b0-43e9-91fd-48c919d9d68f" />
 </p>
 
-11. Go back to the **Group Policy Management** page
-12. Right-click **Default Domain Policy**
-13. Click **Enforce**
+15. Go back to the **Group Policy Management** page
+16. Right-click **Default Domain Policy**
+17. Click **Enforced**
 
 <p align="center">
   <img width="751" height="527" alt="Untitled Diagram-Page-8 drawio" src="https://github.com/user-attachments/assets/af525589-f358-4b69-9ae8-9f9a0a696945" />
@@ -511,7 +505,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ### 21) Lockout the User's Account
 
-1. Attempt to log into the **client Virtual Machine** using an **incorrect password** four times
+1. Attempt to log into the **Client Virtual Machine** using an **incorrect password** four times
 
 <p align="center">
   <img width="567" height="369" alt="Untitled Diagram-Page-9 drawio" src="https://github.com/user-attachments/assets/888ab766-b79a-4c76-b220-5e1fe7899df0" />
@@ -521,7 +515,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ### 22) Unlock the User's Account
 
-1. Open **Active Directory Users and Computers**
+1. In the **Domain Controller** open **Active Directory Users and Computers**
 2. Double click the user **Ryan Kennon**
 3. Click **Account**
 4. Check the box labeled **Unlock Account**
@@ -553,7 +547,7 @@ This project demonstrates the complete deployment and administration of an enter
 
 ### 24) Verify Functionality
 
-1. Attempt to log into the **client Virtual Machine** using the updated **user credentials**
+1. Attempt to log into the **Client Virtual Machine** using the updated **user credentials**
 
 <p align="center">
   <img width="786" height="444" alt="Untitled Diagram-Page-13 drawio" src="https://github.com/user-attachments/assets/bee7a8f1-ecee-4678-b7f7-63e19546e757" />
@@ -565,11 +559,6 @@ This project demonstrates the complete deployment and administration of an enter
 
 1. On the **Domain Controller** open **Active Directory Users and Computers**
 2. Right-click the user **Ryan Kennon** and select **Properties**
-
-<p align="center">
-  <img width="752" height="528" alt="Untitled Diagram-Page-1 drawio" src="https://github.com/user-attachments/assets/db0724d4-87f1-47f1-8ca4-0720ae61eb45" />
-</p>
-
 3. Navigate to the **Account** tab and click **Logon Hours**
 4. Select **Logon Denied** to clear the hours
 5. Apply the changes
