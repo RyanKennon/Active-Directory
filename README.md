@@ -140,7 +140,7 @@ This project demonstrates the complete deployment and administration of an enter
 3. Enter the **DC's Private IP address** and save
 
 <p align="center">
-  <img src="Images/Image%2011.png" img width="1384" height="629" alt="image">
+  <img src="Images/Image%2011.PNG" img width="1384" height="629" alt="image">
 </p>
 
 4. Restart the client VM
@@ -180,7 +180,7 @@ This project demonstrates the complete deployment and administration of an enter
 2. On the **Server Roles** tab check **Active Directory Domain Services** then complete the installation
 
 <p align="center">
-  <img src="Images/Image%2015.png" img width="783" height="558" alt="image">
+  <img src="Images/Image%2015.PNG" img width="783" height="558" alt="image">
 </p>
 
 ---
@@ -189,13 +189,13 @@ This project demonstrates the complete deployment and administration of an enter
 1. In the **Server Manager** click the **notification flag** and select **Promote this server to a domain controller**
 
 <p align="center">
-  <img src="Images/Image%2016.png" img width="1921" height="784" alt="image">
+  <img src="Images/Image%2016.PNG" img width="1921" height="784" alt="image">
 </p>
 
 2. Choose **Add a new forest** and set the root domain name to **domain.name**
 
 <p align="center">
-  <img src="Images/Image%2017.png" img width="759" height="556" alt="image">
+  <img src="Images/Image%2017.PNG" img width="759" height="556" alt="image">
 </p>
 
 3. Set the Directory Services Restore Mode (DSRM) password to **Cyberlab123!** and complete the install and reboot the VMM
@@ -223,7 +223,7 @@ This project demonstrates the complete deployment and administration of an enter
 3. Ensure the ping succeeded
 
 <p align="center">
-  <img src="Images/Image%2019.png" img width="858" height="396" alt="image">
+  <img src="Images/Image%2019.PNG" img width="858" height="396" alt="image">
 </p>
 
 4. Enter the command **`ipconfig /all`** into Windows Powershell
@@ -242,7 +242,7 @@ This project demonstrates the complete deployment and administration of an enter
 3. Check the **Member of Domain** box and enter the name of the **domain** and apply the changes
 
 <p align="center">
-  <img src="Images/Image%2021.png" img width="1638" height="1079" alt="image">
+  <img src="Images/Image%2021.PNG" img width="1638" height="1079" alt="image">
 </p>
 
 ---
@@ -256,7 +256,7 @@ This project demonstrates the complete deployment and administration of an enter
 5. Apply the changes
 
 <p align="center">
-  <img src="Images/Image%2022.png" img width="1315" height="835" alt="image">
+  <img src="Images/Image%2022.PNG" img width="1315" height="835" alt="image">
 </p>
 
 9. Restart the VM
