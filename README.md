@@ -582,20 +582,20 @@ This project demonstrates the complete deployment and administration of an enter
 2. Select **Disable Account**
 
 <p align="center">
-  <img width="751" height="527" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/e40b9962-228c-49bb-9297-62e788293db2" />
+  <img src="Images/Image%2058.PNG" img width="751" height="527" alt="image">
 </p>
 
 3. Attempt to log into the **Client Virtual Machine** using the **User's Credentials** to observe the change
 
 <p align="center">
-  <img width="554" height="353" alt="Untitled Diagram-Page-6 drawio" src="https://github.com/user-attachments/assets/84c46e04-3b9f-4761-92ab-1dc62f5c38e4" />
+  <img src="Images/Image%2059.PNG" img width="554" height="353" alt="image">
 </p>
 
 4. In **Active Directory Users and Computers** right-click the user
 5. Select **Enable Account** to reactive the user account
 
 <p align="center">
-  <img width="751" height="528" alt="Untitled Diagram-Page-7 drawio" src="https://github.com/user-attachments/assets/729d3251-ebae-41c6-a384-0f335e9e375c" />
+  <img src="Images/Image%2060.PNG" img width="751" height="528" alt="image" >
 </p>
 
 ---
@@ -607,11 +607,11 @@ This project demonstrates the complete deployment and administration of an enter
 3. Confirm you want to delete the user
 
 <p align="center">
-  <img width="752" height="528" alt="Untitled Diagram-Page-8 drawio" src="https://github.com/user-attachments/assets/12ae387a-88d9-41ee-ae40-8a47b0962789" />
+  <img src="Images/Image%2061.PNG" img width="752" height="528" alt="image">
 </p>
 
 4. Attempt to log into the **Client Virtual Machine** using the **User's Credentials** to observe the change
 
 <p align="center">
-  <img width="452" height="415" alt="Untitled Diagram-Page-9 drawio" src="https://github.com/user-attachments/assets/0d5ed55c-72fc-4a9b-9e6d-142a3c1fbda0" />
+  <img src="Images/Image%2062.PNG" img width="452" height="415" alt="image">
 </p>
