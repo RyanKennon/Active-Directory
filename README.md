@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="469" height="263" alt="image" src="https://github.com/user-attachments/assets/087156be-e1e9-425c-b3fd-d9892d931468" />
+  <img src="Images/Header.png" img width="469" height="263" alt="image">
 </p>
 
 # Active Directory Enterprise Administration End-to-End Lab (Azure Virtual Environment)
@@ -58,7 +58,7 @@ This project demonstrates the complete deployment and administration of an enter
   - **Reigon:** South Central US
 
 <p align="center">
-  <img width="426" height="373" alt="Untitled Diagram-Page-1 drawio" src="https://github.com/user-attachments/assets/a69171bc-fb18-4e60-a6c6-fd4aa9844675" />
+  <img src="Images/Image%201.png" img width="426" height="373" alt="image">
 </p>
 
 2. Search **Virtual Network** and select **create** then give the **Virtual Network** the following settings then create the **Virtual Network**
@@ -67,7 +67,7 @@ This project demonstrates the complete deployment and administration of an enter
   - **Reigon:** South Central US
 
 <p align="center">
-  <img width="550" height="612" alt="Untitled Diagram-Page-2 drawio" src="https://github.com/user-attachments/assets/e9d0699e-cf47-4e10-be8f-44c13fcf49b2" />
+  <img src="Images/Image%202.png" img width="550" height="612" alt="image">
 </p>
 
 3. Seach **Virtual Machines** then **create** then give the **Virtual Machine** the following settings then create the **Virtual Machine**
@@ -82,8 +82,8 @@ This project demonstrates the complete deployment and administration of an enter
     - **Virtual Network:** VNet-01
    
 <p align="center">
-  <img width="609" height="463" alt="Untitled Diagram-Page-3 drawio" src="https://github.com/user-attachments/assets/2686cebb-85f3-4324-bdd6-f620d63f07d6" />
-  <img width="410" height="226" alt="Untitled Diagram-Page-4 drawio" src="https://github.com/user-attachments/assets/8f098656-6478-4fd0-b4ba-4dc3d1cbb35c" />
+  <img src="Images/Image%203.png" img width="609" height="463" alt="image">
+  <img src="Images/Image%204.png" img width="410" height="226" alt="image">
 </p>
 
   4. Seach **Virtual Machines** then **create** then give the **Virtual Machine** the following settings then create the **Virtual Machine**
@@ -98,9 +98,9 @@ This project demonstrates the complete deployment and administration of an enter
     - **Virtual Network:** VNet-01
    
 <p align="center">
-  <img width="615" height="452" alt="Untitled Diagram-Page-5 drawio" src="https://github.com/user-attachments/assets/3913cb34-0083-4916-8d24-f92ef378a0fa" />
-  <img width="418" height="232" alt="Untitled Diagram-Page-6 drawio" src="https://github.com/user-attachments/assets/c038b7e5-79bf-4bf3-82c3-6a0765eeb79e" />
-  <img width="1329" height="326" alt="Capture7" src="https://github.com/user-attachments/assets/da033595-cf92-432e-bb1a-daed902f584a" />
+  <img src="Images/Image%205.png" img width="615" height="452" alt="image">
+  <img src="Images/Image%206.png" img width="418" height="232" alt="image">
+  <img src="Images/Image%207.png" img width="1329" height="326" alt="image">
 </p>
 
 ---
@@ -110,14 +110,14 @@ This project demonstrates the complete deployment and administration of an enter
 1. Select the **DC-01 (Domain Controller)** then select **Network Settings** then open the **Network Interface**
 
 <p align="center">
-  <img width="1626" height="533" alt="Drawing3 drawio" src="https://github.com/user-attachments/assets/3d2ec7e6-8b41-4d2c-8082-577b8f82d426">
+  <img src="Images/Image%208.png" img width="1626" height="533" alt="image">
 </p>
 
 2. Select **ipconfig1**
 3. For Private IP address setting choose **Static** and save changes
 
 <p align="center">
-  <img width="1870" height="762" alt="Drawing4 drawio" src="https://github.com/user-attachments/assets/b978ad18-23b4-420e-8dec-4edf7962d113" />
+  <img src="Images/Image%209.png" img width="1870" height="762" alt="image">
 </p>
 
 
@@ -128,7 +128,7 @@ This project demonstrates the complete deployment and administration of an enter
 1. Select the **Domain Controller** then open the **Network Settings** tab and find the **Private IP Address**
 
 <p align="center">
-  <img width="1625" height="531" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/54fcc4ca-6b89-4fc8-9dfa-ab3795b47ce0" />
+  <img src="Images/Image%2010.png" img width="1625" height="531" alt="image">
 </p>
 
 ---
@@ -140,7 +140,7 @@ This project demonstrates the complete deployment and administration of an enter
 3. Enter the **DC's Private IP address** and save
 
 <p align="center">
-  <img width="1384" height="629" alt="Drawing5 drawio" src="https://github.com/user-attachments/assets/50e20109-3927-4b33-a3c9-eca327854bc1" />
+  <img src="Images/Image%2011.png" img width="1384" height="629" alt="image">
 </p>
 
 4. Restart the client VM
@@ -152,14 +152,14 @@ This project demonstrates the complete deployment and administration of an enter
 1. Search **Virtual Machines** and check under the **Public IP address** tab for the **Domain Controller's Public IP address** and copy it
 
 <p align="center">
-  <img width="1245" height="291" alt="Untitled Diagram-Page-8 drawio (1)" src="https://github.com/user-attachments/assets/cbdbf438-90dd-4f9f-950f-db55e4761e05" />
+  <img src="Images/Image%2012.png" img width="1245" height="291" alt="image">
 </p>
 
 2. In the **Windows search bar** search **RDP** to open the **Remote Desktop Protocol**
 3. Where it says **Computer** paste the **Domain Controller's Public IP address**
 
 <p align="center">
-  <img width="405" height="250" alt="Capture11" src="https://github.com/user-attachments/assets/5b4dfe75-9db2-4afd-b32c-daa4a4520033" />
+  <img src="Images/Image%2013.png" img width="405" height="250" alt="image">
 </p>
 
 4. When it asks for the login credentials enter:
@@ -167,7 +167,7 @@ This project demonstrates the complete deployment and administration of an enter
   - **Password:** Cyberlab123!
 
 <p align="center">
-  <img width="453" height="469" alt="Capture12" src="https://github.com/user-attachments/assets/e0d101ab-a6b2-4af3-a8e1-e90dcbd21fd9" />
+  <img src="Images/Image%2014.png" img width="453" height="469" alt="image">
 </p>
 
 5. To log into the **client virtual machine** copy the **client's public IP address** and follow the same steps
@@ -180,7 +180,7 @@ This project demonstrates the complete deployment and administration of an enter
 2. On the **Server Roles** tab check **Active Directory Domain Services** then complete the installation
 
 <p align="center">
-  <img width="783" height="558" alt="Drawing6 drawio (1)" src="https://github.com/user-attachments/assets/501c6406-cc17-46e2-9f33-6abc957f1de4" />
+  <img src="Images/Image%2015.png" img width="783" height="558" alt="image">
 </p>
 
 ---
@@ -189,13 +189,13 @@ This project demonstrates the complete deployment and administration of an enter
 1. In the **Server Manager** click the **notification flag** and select **Promote this server to a domain controller**
 
 <p align="center">
-  <img width="1921" height="784" alt="Drawing7 drawio" src="https://github.com/user-attachments/assets/1dde3344-4dd4-4051-bf4a-c71120f3a326" />
+  <img src="Images/Image%2016.png" img width="1921" height="784" alt="image">
 </p>
 
 2. Choose **Add a new forest** and set the root domain name to **domain.name**
 
 <p align="center">
-  <img width="759" height="556" alt="Drawing8 drawio" src="https://github.com/user-attachments/assets/1fff2c8d-80e7-4574-98f3-9bea980308ef" />
+  <img src="Images/Image%2017.png" img width="759" height="556" alt="image">
 </p>
 
 3. Set the Directory Services Restore Mode (DSRM) password to **Cyberlab123!** and complete the install and reboot the VMM
@@ -210,7 +210,7 @@ This project demonstrates the complete deployment and administration of an enter
    - **Password:** Cyberlab123!
   
 <p align="center">
-  <img width="454" height="468" alt="Capture2" src="https://github.com/user-attachments/assets/b6ca06fd-0af3-46c0-b0ef-b2fb9e2f9823" />
+  <img src="Images/Image%2018.png" img width="454" height="468" alt="image">
 </p>
 
 ---
@@ -223,14 +223,14 @@ This project demonstrates the complete deployment and administration of an enter
 3. Ensure the ping succeeded
 
 <p align="center">
-  <img width="858" height="396" alt="Drawing9 drawio" src="https://github.com/user-attachments/assets/e726fac9-d102-4c9b-93f6-c5e6f93eda7d" />
+  <img src="Images/Image%2019.png" img width="858" height="396" alt="image">
 </p>
 
 4. Enter the command **`ipconfig /all`** into Windows Powershell
 5. Confirm the output for the client's DNS settings shows the DC's private IP address
 
 <p align="center">
-  <img width="859" height="561" alt="Drawing10 drawio" src="https://github.com/user-attachments/assets/cb116758-0992-466c-9230-885a7b8a4ebc" />
+  <img src="Images/Image%2020.png" img width="859" height="561" alt="image">
 </p>
 
 ---
@@ -242,7 +242,7 @@ This project demonstrates the complete deployment and administration of an enter
 3. Check the **Member of Domain** box and enter the name of the **domain** and apply the changes
 
 <p align="center">
-  <img width="1638" height="1079" alt="Previous1 drawio (1)" src="https://github.com/user-attachments/assets/490a7c5f-43c2-4692-836e-791d75116410" />
+  <img src="Images/Image%2021.png" img width="1638" height="1079" alt="image">
 </p>
 
 ---
@@ -256,7 +256,7 @@ This project demonstrates the complete deployment and administration of an enter
 5. Apply the changes
 
 <p align="center">
-  <img width="1315" height="835" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/0e47978d-ae31-48e5-b0ee-769e49cf6ae9" />
+  <img src="Images/Image%2022.png" img width="1315" height="835" alt="image">
 </p>
 
 9. Restart the VM
@@ -269,7 +269,7 @@ This project demonstrates the complete deployment and administration of an enter
 2. Select **Tools** then **Active Directory Users and Computers**
 
 <p align="center">
-  <img width="1921" height="746" alt="Previous2 drawio (2)" src="https://github.com/user-attachments/assets/3a758583-b630-4971-839f-a02f0c974cab" />
+  <img src="Images/Image%2023.png" img width="1921" height="746" alt="image">
 </p>
 
 3. Expand the **Domain** then click **Computers**
