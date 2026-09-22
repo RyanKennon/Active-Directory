@@ -2,7 +2,7 @@
   <img src="Images/Header.png" img width="469" height="263" alt="image">
 </p>
 
-# Active Directory Enterprise Administration End-to-End Lab (Azure Virtual Environment)
+# Active Directory Enterprise Administration End-to-End Lab
 
 This project demonstrates the complete deployment and administration of an enterprise-grade Active Directory environment hosted in Microsoft Azure. The lab walks through building a Windows Server domain controller, joining a Windows 10 client to the domain, configuring DNS and networking, and implementing real-world identity and access management operations. It includes creating organizational units, provisioning users, managing security groups, enforcing NTFS and share permissions, applying password and account lockout policies, configuring logon hour restrictions, and performing full user lifecycle operations—from creation to deprovisioning. This end-to-end lab replicates a true corporate IT environment and reinforces essential skills used in IT Support, Systems Administration, and Identity & Access Management roles.
 
